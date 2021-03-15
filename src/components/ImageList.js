@@ -7,7 +7,15 @@ const ImageList = (props) => {
     return <ImageCard key={image.id} image={image} />;
   });
 
-  return <div className="image-list">{images}</div>;
+  return (
+    <div className="ui container">
+      <div className="image-list">{images}</div>
+      <div className="ui segment">
+        <h5 className="ui centered aligned header">End of results...</h5>
+      </div>
+      <div class="ui divider"></div>
+    </div>
+  );
 };
 
 export default ImageList;

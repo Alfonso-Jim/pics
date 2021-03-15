@@ -29,7 +29,6 @@ class ImageCard extends React.Component {
       likes,
       urls,
     } = this.props.image;
-    console.log(this.props.image);
 
     return (
       <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
